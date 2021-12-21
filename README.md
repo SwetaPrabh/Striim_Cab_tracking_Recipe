@@ -16,7 +16,7 @@ Change Data Capture has gained popularity in the last decade as companies have 
 The dataset used in this example contains 4.5 million uber booking data that contains 5 features, DateTime, latitude, longitude, and  TLC base company at NYC. The goal is to stream the data through Striim's CDC platform and detect the areas that have more bookings (hotspots) every 30 minutes. The latitude and longitude value was  converted using the following query to cluster them into certain areas.
 
 ## Step 1: Reading Data from CSV and Streaming into Continuous Query through stream
-In this step, the data is read from the data source using a delim-separated source (cabCsvSource) with FileReader adapter used for CSV source.  The data is then streamed into cabCSvSourceStream which reaches cabCQ for continuous query. The SQL query at CabCQ2 converts the incoming data into required format
+In this step, the data is read from the data source using a delim-separated parser (cabCsvSource) with FileReader adapter used for CSV source.  The data is then streamed into cabCSvSourceStream which reaches cabCQ for continuous query. The SQL query at CabCQ2 converts the incoming data into required format
 
 ## Step 2: Sending the data for processing in Striim as well as into BigQuery
 The data returned from the continuous query is then sent for processing through a 30-minute window and also migrated to BigQuery for storage. This is a unique feature of the Striim platform that allows data migration and processing at the same time. The data transferred to Bigquery multi-cloud can be used by various teams for analytics while Striim's processing gives valuable insights through its dashboard.
