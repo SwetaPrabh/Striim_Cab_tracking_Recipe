@@ -1,5 +1,7 @@
 # Striim Recipe for real-time data analytics and multi-cloud Migration
 
+Please visit my blog for video walkthrough and step by step tutorial of this recipe : https://swetaprabha.wixsite.com/striimrecipe
+
 ## Overview
 
 Transportation services like Uber and Lyft require streaming data with real-time processing for actionable insights on a minute-by-minute basis. While batch data can provide powerful insight on medium or long-term trends, in this age live data analytics is an essential component of enterprise decision making. It is said data loses its importance within 30 minutes of generation. To facilitate better performance for companies that hugely depend on live data, Striim offers continuous data ingestion from databases and other sources in real-time. With Striim's powerful log-based  Change Data Capture platform, database transactions can be captured and processed in real-time along with data migration to multiple clouds. This technology can be used by all e-commerce, food-delivery platforms, transportation services, and many others that harnesses real-time analytics to generate value. In this blog, I have shown how real-time cab booking data can be streamed to Striim's platform and processed in-flight for real-time visualization through Striim's dashboard as well as migration to BigQuery at the same time
